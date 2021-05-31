@@ -20,23 +20,3 @@
     transition: all 0.3s ease-in-out 0s;
 }
 
-@keyframes glow {
-            from {
-                text-shadow:0 0 10px rgb(43, 255, 0),
-                            0 0 20px rgb(43, 255, 0), 
-                            0 0 30px #26e600, 
-                            0 0 40px #26e600,
-                            0 0 50px #26e600,
-                            0 0 60px #26e600, 
-                            0 0 70px #26e600;
-            }
-            to {
-                text-shadow: 0 0 20px #4dff7a;
-                            0 0 30px #4dff7a, 
-                            0 0 40px #4dff7a,
-                            0 0 50px #4dff7a, 
-                             0 0 60px #4dff7a,
-                             0 0 70px #4dff7a, 
-                             0 0 80px #4dff7a;
-            }
-        }

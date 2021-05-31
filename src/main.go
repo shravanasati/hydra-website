@@ -15,6 +15,7 @@ func loadPage(page string) ([]byte, error) {
 }
 
 func main() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
 		c, e := loadPage("index.html")
 		if e != nil {
