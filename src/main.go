@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 )
 
 func loadPage(page string) ([]byte, error) {
@@ -23,6 +24,8 @@ func main() {
 		}
 		w.Write(c)
 	})
-
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	
+	port := os.Getenv("PORT")
+	if len(port) == 0 { port = "8080" }
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
