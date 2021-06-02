@@ -54,11 +54,11 @@
     z-index: -1;
 }
 
-/* Add some content at the bottom of the video/page */
-.container {
+#home-container {
     bottom: 0;
     color: #f1f1f1;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -67,7 +67,20 @@
     font-size: 3.5rem;
 }
 
-.container p {
+#home-container p {
     font-size: 1.5rem;
     padding: 15px 2px 12px 10px;
+}
+
+
+/*  */
+/* FEATURES PAGE */
+/*  */
+
+#features-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
