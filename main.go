@@ -25,8 +25,9 @@ func main() {
 		}
 		w.Write(c)
 	})
-	
+
 	port := os.Getenv("PORT")
 	if len(port) == 0 { port = "8080" }
+	fmt.Println("Listening on port:", port)
 	fmt.Println(http.ListenAndServe(":"+port, nil))
 }
