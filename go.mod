@@ -1,3 +1,3 @@
-module github.com/Shravan-1908/hydra-website
+module github.com/shravanasati/hydra-website
 
 go 1.16
